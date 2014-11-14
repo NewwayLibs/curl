@@ -150,7 +150,7 @@ class Curl
             $data = (isset($this->data[$key]) and $this->data[$key] !== null) ? $this->data[$key] : null;
 
             // Follow any 3xx HTTP status code.
-            $request->setOption(CURLOPT_FOLLOWLOCATION, true);
+            //$request->setOption(CURLOPT_FOLLOWLOCATION, true);
 
             switch ($this->method) {
                 case 'DELETE':
